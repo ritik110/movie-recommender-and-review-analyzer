@@ -1,0 +1,15 @@
+# from urllib.request import urlopen
+# import json
+
+# api = '825bf7ec4a7cd7119564472623dfaf05'
+
+# def rec(title):
+#     title = title.replace(" ", "%20")
+#     url1 ='https://api.themoviedb.org/3/search/movie?api_key='+api+'&query='+title
+#     #x = requests.get(url1)
+#     #soup = BeautifulSoup(x.text)
+#     response = urlopen(url1)
+#     data_json = json.loads(response.read())
+#     sessionPandas = pd.DataFrame(data_json)
+#     ser = pd.Series(sessionPandas.results[0], index = ['id'])
+#     return ser
